@@ -1,23 +1,15 @@
-.bar {
-	 
-
+.container {
+	display: flex;
+	flex-direction: column;
 }
- .row input#search:focus {
- 	width: 300px;
- }
 
- .row input#search:active {
- 	width: 300px;
-
- }
-input {
-	;
-}
  body {
- 	background-color: RGB(200, 75, 75);
+ 	background-color: RGB(100, 95, 135);
  }
 
- .row input#search {
+
+
+ .bar input#search {
  	width: 50px;
  	height: 50px;
  	border-radius: 5px;
@@ -30,7 +22,7 @@ input {
 
  }
 
- .row .icon {
+ .bar .icon {
  	position: absolute;
  	top: 50%;
  	margin-left: 17px;
@@ -39,11 +31,28 @@ input {
 
  }
 
- .row {
- 	width: 350px;
+ .bar {
+
+ 	max-width: 400px;
  	vertical-align: middle;
  	white-space: nowrap;
  	position: relative;
+ }
+
+ .bar {
+	 margin-left: 17.5%;
+	
+
+}
+ .bar input#search:focus {
+ 	width: 100%;
+ 	
+ }
+
+ .bar input#search:active {
+ 	width: 100%;
+ 	
+
  }
 
 
