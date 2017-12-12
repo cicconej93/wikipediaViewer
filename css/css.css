@@ -1,6 +1,16 @@
 .container {
+	margin: 300px auto;
+	
 	display: flex;
 	flex-direction: column;
+	background-color: pink;
+	align-items: center;
+	width: 100%;
+	max-width: 400px;
+}
+
+.title {
+
 }
 
  body {
@@ -32,18 +42,15 @@
  }
 
  .bar {
-
+ 	width: 100%;
  	max-width: 400px;
  	vertical-align: middle;
  	white-space: nowrap;
  	position: relative;
+
  }
 
- .bar {
-	 margin-left: 17.5%;
-	
 
-}
  .bar input#search:focus {
  	width: 100%;
  	
