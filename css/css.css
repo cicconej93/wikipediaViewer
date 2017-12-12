@@ -1,15 +1,15 @@
 .container {
 	margin: 300px auto;
-	
 	display: flex;
 	flex-direction: column;
-	background-color: pink;
+	
 	align-items: center;
 	width: 100%;
 	max-width: 400px;
 }
 
 .title {
+	font-family: 'Lobster', cursive;
 
 }
 
@@ -26,9 +26,12 @@
  	transition: width 0.5s ease;
  	outline: none;
  	border: none;
+ 	box-shadow: 0 0 3px #ddd;
+ 	font-family: 'Lobster', cursive;
  	font-size: 10pt;
  	float: left;
  	padding-left: 40px;
+ 	background-color: pink;
 
  }
 
