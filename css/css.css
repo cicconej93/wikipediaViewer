@@ -8,6 +8,11 @@
 	max-width: 400px;
 }
 
+.text {
+	font-family: 'Lobster', cursive;
+	font-size: 10pt;
+}
+
 .title {
 	font-family: 'Lobster', cursive;
 
