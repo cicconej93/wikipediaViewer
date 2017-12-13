@@ -1,10 +1,13 @@
+var wiki = document.querySelector(".wikis");
 
 
 
 document.addEventListener('keydown', function(event) {
+
 	if (event.key === "Enter") {
+		wiki.innerHTML = '';
 		var search = document.getElementById('search').value;
-		console.log(search);
+		//console.log(search);
 		var json = new XMLHttpRequest();
 
 		json.open('GET', 'https://en.wikipedia.org/w/api.php?action=opensearch&search='+search+'&limit=10&format=json&origin=*');
@@ -13,7 +16,15 @@ document.addEventListener('keydown', function(event) {
 		json.onload = function() {
 			
 			var data = JSON.parse(json.responseText);
-			console.log(data);
+			//console.log(data[1].length);
+
+			for(var i = 0; i < 5; i++){
+				
+				wiki.innerHTML += '<a href="https://wikipedia.com/wiki/'+data[1][i]+'"><div class="entry"><h3>'+data[1][i]+'</h3>' + '<span>'+data[2][i]+'</span></div></a>';
+			}
+
+			//console.log(data[1][0]);
+			//console.log(data[2][0]);
 
 		}
 

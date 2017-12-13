@@ -9,12 +9,12 @@
 }
 
 .text {
-	font-family: 'Lobster', cursive;
+	font-family: 'Lobster', cursive, sans-serif;
 	font-size: 10pt;
 }
 
 .title {
-	font-family: 'Lobster', cursive;
+	font-family: 'Lobster', cursive, sans-serif;
 
 }
 
@@ -70,5 +70,19 @@
 
  }
 
+a {
+	text-decoration: none;
+	font-family: Arial;
+	color: black;
+}
 
+
+.entry {
+	background-color: rgb(150, 140, 160);
+	border-radius: 5px;
+	box-shadow: 0 0 3px #ddd;
+	margin-bottom: 10px;
+
+	
+}
 
