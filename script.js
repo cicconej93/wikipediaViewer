@@ -22,8 +22,13 @@ document.addEventListener('keydown', function(event) {
 				wiki.innerHTML = '<div class="entry"><h3>No Results</h3></div>';
 			} else {
 				for(var i = 0; i < 5; i++){
+					if(data[1][i] === undefined){
+						wiki.innerHTML += '';
+					} else {
+						wiki.innerHTML += '<a href="https://wikipedia.com/wiki/'+data[1][i]+'"><div class="entry"><h3>'+data[1][i]+'</h3>' + '<span>'+data[2][i]+'</span></div></a>';
+					}
 				
-				wiki.innerHTML += '<a href="https://wikipedia.com/wiki/'+data[1][i]+'"><div class="entry"><h3>'+data[1][i]+'</h3>' + '<span>'+data[2][i]+'</span></div></a>';
+				
 			}
 
 			}
