@@ -7,11 +7,11 @@ document.addEventListener('keydown', function(event) {
 		console.log(search);
 		var json = new XMLHttpRequest();
 
-		json.open('GET', 'https://en.wikipedia.org/w/api.php?action=query&titles='+search+'&prop=revisions&rvprop=content&format=json');
+		json.open('GET', 'https://en.wikipedia.org/w/api.php?action=opensearch&search='+search+'&limit=10&format=json&origin=*');
 
 
 		json.onload = function() {
-			console.log("This");
+			
 			var data = JSON.parse(json.responseText);
 			console.log(data);
 
@@ -27,5 +27,7 @@ document.addEventListener('keydown', function(event) {
 	}
 
 });
+
+
 
 
