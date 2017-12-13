@@ -21,7 +21,7 @@ document.addEventListener('keydown', function(event) {
 			if(data[1][0] === undefined){
 				wiki.innerHTML = '<div class="entry"><h3>No Results</h3></div>';
 			} else {
-				for(var i = 0; i < 5; i++){
+				for(var i = 0; i < data[1].length; i++){
 					if(data[1][i] === undefined){
 						wiki.innerHTML += '';
 					} else {
